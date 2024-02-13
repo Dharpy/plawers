@@ -1,0 +1,182 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,400&display=swap');
+
+/* tibok tibok */
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+@keyframes heartbeat {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  10% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  40%, 60% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* I wish i were heather  */
+header {
+  background-color: transparent;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 999;
+  transition: top 0.3s ease;
+}
+/* Page 1  */
+@media (max-width: 600px) {
+  .greet, .greet2 {
+    font-size: clamp(20px, 8vw, 30px);
+  }
+}
+.greet{
+  color: #F2C5E0;
+  position: absolute;
+  top: 30%;
+  left: 38.22%;
+  font-size: clamp(30px, 50vw, 58px) ;
+  font-weight: 900;
+  z-index: 3;
+}
+.greet2{
+  color: #F2C5E0;
+  position: absolute;
+  top: 37%;
+  left: 38%;
+  font-size: clamp(30px, 50vw, 60px) ;
+  font-weight: 900;
+  z-index: 3;
+
+}
+.hero {
+  height: 100vh;
+  background-image: url(images/bg1.png);
+  background-size: cover;
+  background-color: #F2C5E0;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #870A30;
+  text-align: center;
+  z-index: 1;
+}
+/* Langit Movement */
+.container-clouds{
+  z-index: 2;
+}
+.overlay-clouds {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); 
+  width: 100%;
+  height: auto;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation-name: moveCloudsToLeft;
+  animation-duration: 40s;
+  animation: moveCloudsToLeft 60s linear infinite;
+}
+/* Heartbeat eme */
+.container-heart {
+  z-index: 2;
+}
+.overlay-hart {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* Initial scale */
+  width: 90%;
+  height: auto;
+  animation: heartbeat 1s infinite;
+}
+/* Page 2  */
+
+section {
+  height: 100vh;
+  background-color: #870A30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Secret Pages  */
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.spotify {
+  border: none;
+  border-radius: 5%;
+  background-color: #F2C5E0;
+  color: #870A30;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.letter{
+  font-family: 'Pacifico', cursive;
+  color: #F2C5E0;
+  position: absolute;
+  top: 104%;
+  bottom:  10%;
+  text-align: center;
+  z-index: 5;
+}
+.letter2{
+  font-family: 'Pacifico', cursive;
+  text-align: justify;
+  color: #F2C5E0;
+  position: absolute;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 15%;
+  z-index: 4;
+}
+
+.closeSection {
+  background-color: #d02820;
+  border: none;
+  border-radius: 6%;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* flower */
