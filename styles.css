@@ -146,6 +146,7 @@ ul {
 }
 .letter{
   font-family: 'Pacifico', cursive;
+  font-size: 2rem;
   color: #F2C5E0;
   position: absolute;
   top: 104%;
@@ -158,7 +159,7 @@ ul {
   text-align: justify;
   color: #F2C5E0;
   position: absolute;
-  font-size: 1.25rem;
+  font-size: 1.9rem;
   font-weight: normal;
   margin: 15%;
   z-index: 4;
@@ -178,5 +179,3 @@ ul {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
-/* flower */
